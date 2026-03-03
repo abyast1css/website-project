@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/landing_page.css">
+</head>
+<body>
+    <header class= "header-container">
+            <img src="/Pages/Images/image.png"
+            style="width:px;height:70px;">
+            <nav>
+                <ul>
+                    <li><a href="landing_page.html">Home</a></li>
+                    <li><a href="boards.html">Boards</a></li>
+                    <li><a href="tricks_and_tips.html">Tricks and Tips</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </nav>
+    </header>
+
+
+
+
+<div class="welcome-section">
+    <video class="welcome-video" autoplay muted loop preload="auto" playsinline>
+        <source src="/Pages/Videos/title background video- Trim - Trim.mp4" type="video/mp4"> <!--Here the background for the title is a video complilation-->
+    </video>
+    <div class="welcome-overlay">
+        <h1>Palowski Skates</h1>
+    </div>
+</div>
+
+
+<div class="about-section">
+    <div class="slideshow-container"> <!--3 different images fade in and out of eachother showing palowski in action-->
+        
+        <div class="slide fade">
+            <img src="/Pages/Images/indoor-skateboarding-with-meal-19133232.avif" alt="image 1" style="width:100%">
+        </div>
+
+        <div class="slide fade">
+            <img src="/Pages/Images/skateboard-art-1.jpg" alt="image 2" style="width:100%">
+        </div>
+
+        <div class="slide fade">
+            <img src="/Pages/Images/Skateboarding_Mindset_1.jpg" alt="image 3" style="width:100%">
+        </div>
+    </div>
+
+    <div class="text-content">
+        <p>Simon Palowski has always had a fasination with skateboarding even at a youngage he would always be out performing tricks at his local skatepark. Eventually he went on to compete in local tournament even winning some awards along his way. This site is to show his love and appreciation for the sport including boards that he either made himself or has partnered with, Tricks and tips so you can become a pro yourself and a events page where you can go and test your skills against others and maybe even meet palowski himself.</p>
+    </div>
+</div>
+<br>
+
+
+
+<div class="news-container">
+    <h2>Latest Skateboarding News</h2> <!--Three blocks detailing different local news-->
+
+    <div class="news-blocks-row">
+        <div class="news-block">
+            <img src="/Pages/Images/250918_XG-SLC-MSK-Park.jpg" alt="Champion skateboarder" class="news-image">
+            <div class="news-content">
+                <h3>Local Champion Wins National Contest</h3>
+                <p>Our local skateboarding legend Steve-O took first place at the National Skateboarding Championship. Congratulations on an amazing performance!</p>
+            </div>
+        </div>
+
+        <div class="news-block">
+            <img src="/Pages/Images/Tony-Steve-Ingle.jpg" alt="Rising star skateboarder" class="news-image">
+            <div class="news-content">
+                <h3>A new prodigy might become number one</h3>
+                <p>Alice Winter is a rising star in the skateboarding world, known for her innovative tricks and dedication to the sport.</p>
+            </div>
+        </div>
+
+        <div class="news-block">
+            <img src="/Pages/Images/alan-wake-2-smile.avif" alt="Skateboarding inspiration" class="news-image">
+            <div class="news-content">
+                <h3>Alan Wake talks on how skateboarding improved his writing</h3>
+                <p>Alan Wake discusses how skateboarding helped him develop a more fluid and creative writing style after having writers block for so long.</p>
+            </div>
+        </div>    
+    </div>
+</div>
+
+<div class="events-container"> <!--Three different blocks showing local events Clicking them sends the user to the events page-->
+    <h2>Upcoming Events</h2>
+    <div class="events-blocks-row">
+        <div class="event-block">
+            <h3>Downtown Skate Competition</h3>
+            <p>Saturday, Jan 25 • 2:00 PM</p>
+            <a href="/Pages/events.html" class="event-link">View Details</a>
+        </div>
+        <div class="event-block">
+            <h3>Community Skate Night</h3>
+            <p>Friday, Jan 24 • 6:00 PM</p>
+            <a href="/Pages/events.html" class="event-link">View Details</a>
+        </div>
+        <div class="event-block">
+            <h3>Beginner Lessons</h3>
+            <p>Sunday, Jan 26 • 10:00 AM</p>
+            <a href="/Pages/events.html" class="event-link">View Details</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<footer class="footer-container">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Quick Links</h4> <!--quick links that can send the user to the different pages-->
+            <ul>
+                <li><a href="landing_page.html">Home</a></li>
+                <li><a href="boards.html">Boards</a></li>
+                <li><a href="tricks_and_tips.html">Tricks & Tips</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section"> <!--Blocks of different social medias which when clicked on will send the user to said social media-->
+            <h4>Follow Us</h4>
+            <div class="social-links">
+                <a href="https://www.instagram.com/xgames/?hl=en" class="social-icon">Instagram</a>
+                <a href="https://x.com/XGames" class="social-icon">Twitter</a>
+                <a href="https://www.youtube.com/@XGames" class="social-icon">YouTube</a>
+                <a href="https://www.tiktok.com/@xgames" class="social-icon">TikTok</a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <p>Email: contact@palowskiskates.com</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Location: Skateboard City, USA</p>
+        </div>
+
+        <div class="footer-section newsletter"> <!--A clickable block where users can input their email and submit it-->
+            <h4>Newsletter</h4>
+            <p>Get the latest skateboarding tips and events</p>
+            <form id="newsletterForm">
+             <input type="email" placeholder="Your email">
+             <input type="button" onclick="myFunction()" value="subscribe">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Palowski Skates. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+<script>
+function myFunction() {
+    document.getElementById("newsletterForm").reset();
+}
+</script>
+
+
+</footer>
+
+<script src="/Javascript/slideshow.js"></script>
+</body>
+</html>

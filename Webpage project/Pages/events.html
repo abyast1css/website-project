@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/events.css">
+</head>
+<body>
+    <header class= "header-container">
+        <img src="/Pages/Images/image.png"
+        style="width:px;height:70px;">
+        <nav>
+            <ul>
+                <li><a href="landing_page.html">Home</a></li>
+                <li><a href="boards.html">Boards</a></li>
+                <li><a href="tricks_and_tips.html">Tricks and Tips</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+</header>
+
+<div class="events-title-hero">
+    <h1>Upcoming Local Events</h1>
+</div>
+
+<div class="map-section">
+    <div class="events-links-full">
+        <h3>Events</h3>
+        <ul>
+            <li><a href="/Pages/events.html#event1">Downtown Skate Competition</a><br><small>Saturday, Jan 25 • 2:00 PM</small></li>
+            <li><a href="/Pages/events.html#event2">Community Skate Night</a><br><small>Friday, Jan 24 • 6:00 PM</small></li>
+            <li><a href="/Pages/events.html#event3">Beginner Lessons</a><br><small>Sunday, Jan 26 • 10:00 AM</small></li> <!--clicking on any of these events would send the user to the events actual page or social media-->
+        </ul>
+    </div>
+    
+    <div id="events-map" style="height: 500px; border-radius: 8px; margin-top: 30px;"></div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> <!--two scripts that both make the map interactable and also presentable.-->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script>
+    const map = L.map('events-map').setView([34.0522, -118.2437], 12);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+    L.marker([34.0522, -118.2437]).addTo(map)
+        .bindPopup('<strong>Downtown Skate Competition</strong><br>Saturday, Jan 25<br>2:00 PM');
+
+    L.marker([34.0702, -118.2437]).addTo(map)
+        .bindPopup('<strong>Community Skate Night</strong><br>Friday, Jan 24<br>6:00 PM');
+
+
+    L.marker([34.0522, -118.2537]).addTo(map)
+        .bindPopup('<strong>Beginner Lessons</strong><br>Sunday, Jan 26<br>10:00 AM');
+</script> <!--each of these l.markers present markers to the actual map. Clicking on them will show the user what event it is-->
+
+<footer class="footer-container">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="landing_page.html">Home</a></li>
+                <li><a href="boards.html">Boards</a></li>
+                <li><a href="tricks_and_tips.html">Tricks & Tips</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+                <a href="https://www.instagram.com/xgames/?hl=en" class="social-icon">Instagram</a>
+                <a href="https://x.com/XGames" class="social-icon">Twitter</a>
+                <a href="https://www.youtube.com/@XGames" class="social-icon">YouTube</a>
+                <a href="https://www.tiktok.com/@xgames" class="social-icon">TikTok</a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <p>Email: contact@palowskiskates.com</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Location: Skateboard City, USA</p>
+        </div>
+
+        <div class="footer-section newsletter">
+            <h4>Newsletter</h4>
+            <p>Get the latest skateboarding tips and events</p>
+            <form id="newsletterForm">
+             <input type="email" placeholder="Your email">
+             <input type="button" onclick="myFunction()" value="subscribe">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Palowski Skates. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+
+<script>
+function myFunction() {
+    document.getElementById("newsletterForm").reset();
+}
+</script>
+
+</footer>
+
+
+</body>
+</html>
